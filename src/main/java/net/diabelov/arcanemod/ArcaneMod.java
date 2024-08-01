@@ -1,6 +1,8 @@
 package net.diabelov.arcanemod;
 
 import com.mojang.logging.LogUtils;
+import net.diabelov.arcanemod.block.ModBlocks;
+import net.diabelov.arcanemod.item.ModCreativeModTabs;
 import net.diabelov.arcanemod.item.Moditems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -24,9 +26,12 @@ public class ArcaneMod {
     public ArcaneMod() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
+        ModCreativeModTabs.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         Moditems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
@@ -39,7 +44,8 @@ public class ArcaneMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Moditems.Arcane_Rock);
+            event.accept(Moditems.hexite_crystal);
+            event.accept(Moditems.galsite);
         }
 
     }

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "arcane_mod:hexite_block"
+    }
+  ],
+  "result": {
+    "item": "arcane_mod:hexite_crystal",
+    "count": 9
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "item.arcane_mod.hexite_crystal": "Hexite Crystal",
+  "item.arcane_mod.galsite": "Galsite",
+  "item.arcane_mod.galsite_detector": "Galsite Detector",
+
+  "block.arcane_mod.hexite_block": "Hexite Block",
+
+  "block.arcane_mod.galsite_ore": "Galsite Ore",
+  "block.arcane_mod.deepslate_galsite_ore": "Deepslate Galsite Ore",
+  "block.arcane_mod.nether_galsite_ore": "Nether Galsite Ore",
+
+  "creativetab.arcane_tab": "Arcane",
+
+  "item.arcanemod.galsite_detector.tooltip": "Used to detect Galsite Ore 64 blocks underground"
+}

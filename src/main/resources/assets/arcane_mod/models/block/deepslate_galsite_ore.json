@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "arcane_mod:block/deepslate_galsite_ore"
-  }
-}

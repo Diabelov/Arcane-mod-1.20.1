@@ -21,7 +21,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ModTags.Blocks.GALSITE_DETECTOR)
-                .add(ModBlocks.GALSITE_ORE.get());
+                .add(ModBlocks.GALSITE_ORE.get(),
+                ModBlocks.DEEPSLATE_GALSITE_ORE.get());
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.GALSITE_ORE.get(),
